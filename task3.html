@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+
+    <main>
+        <section id="personal-info">
+            <h2>Personal Information</h2>
+            <form id="personal-info-form">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+            </form>
+        </section>
+<section id="education">
+    <h2>Education</h2>
+    <form id="education-form">
+        <label for="university">University/College:</label>
+        <input type="text" id="university" required>
+
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" required>
+
+        <label for="major">Major:</label>
+        <input type="text" id="major" required>
+
+        <label for="graduation-year">Graduation Year:</label>
+        <input type="text" id="graduation-year" required>
+    </form>
+</section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+                    <form id="work-experience-form">
+                        <div class="work-entry">
+                            <label for="company">Company:</label>
+                            <input type="text" id="company" required>
+        
+                            <label for="position">Position:</label>
+                            <input type="text" id="position" required>
+        
+                            <label for="start-date">Start Date:</label>
+                            <input type="date" id="start-date" required>
+                            <label for="end-date">End Date:</label>
+                            <input type="date" id="end-date" required>
+
+                            <label for="description">Description:</label>
+                    <textarea id="description" rows="3" required></textarea>
+                </div>
+                <!-- Allow users to add more work experience entries dynamically -->
+                <button type="button" id="add-work">Add Work Experience</button>
+            </form>
+        </section>
+        
+            </form>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <form id="skills-form">
+                <label for="skill">Skill:</label>
+                <input type="text" id="skill" required>
+                <button type="button" id="add-skill-btn">Add Skill</button>
+
+                <ul id="skills-list">
+                    <!-- Skills will be added dynamically here -->
+                </ul>
+            </form>
+        </section>
+
+        <section id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-output">
+                <!-- Resume output will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
